@@ -1,6 +1,7 @@
 import React from 'react'
-import ArticleCard from '../ArticleCard/ArticleCard'
-import './ArticleContainer.css'
+import ArticleContainer from '../ArticleContainer/ArticleContainer'
+import Form from '../Form/Form'
+
 interface Articles {
   abstract: string
   byline: string
@@ -32,23 +33,17 @@ interface Articles {
   url: string
 }
 
-const ArticleContainer: React.FC<Articles | any> = (props) => {
-  const articleList = props.articles.map((article: any) => {
-    return (
-      < ArticleCard 
-        key={article.uri}
-        id={article.uri}
-        byline={article.byline}
-        title={article.title}
-        multimedia={article.multimedia}
-      />
-    )
-  })
-  return (
-    <div className='container'>
-      {articleList}
+const Home: React.FC<Articles[] | any> = (articles) => {
+  console.log('HOME PROPS', articles.articles)
+  return(
+    <div>
+      <h1>Daily Dose</h1>
+      <Form filterArticles={articles.filterArticles} resetFilter={articles.resetFilter}/>
+      <ArticleContainer articles={articles.articles}/>
     </div>
   )
 }
 
-export default ArticleContainer
+export default Home
+
+

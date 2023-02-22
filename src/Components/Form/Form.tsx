@@ -1,10 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const Form: React.FC = () => {
+const Form: React.FC<any> = (props) => {
+  console.log('PROPS IN FORM', props)
+  const [input, setInput] = useState<string>('')
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInput(event.currentTarget.value)
+    props.filterArticles(event.currentTarget.value)
+  }
+
+  const reset = () => {
+    props.resetFilter()
+    setInput('')
+  }
+
   return (
-    <div>
-      <h2>This is the form component.</h2>
-    </div>
+    <form className='form'>
+      <input 
+        type='text'    
+        placeholder='Search...'
+        value={input}
+        name='input'
+        onChange={(event) => handleChange(event)}  
+        />
+        <button onClick={reset}>Clear Search</button>
+    </form>
   )
 }
 
