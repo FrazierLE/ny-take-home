@@ -8,6 +8,7 @@ const App: React.FC = () => {
   const initApp = () => {
     fetchData()
       .then(data => {
+        console.log('data results', data.results)
         setArticles(data.results)})
   }
 
