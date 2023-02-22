@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { fetchData } from '../../ApiCalls';
+import { Routes, Route } from 'react-router-dom';
+import ArticleDetails from '../ArticleDetails/ArticleDetails';
+import Home from '../Home/Home';
 
 const App: React.FC = () => {
   const [ articles, setArticles ] = useState([])
@@ -18,7 +21,10 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Routes>
+        <Route path='/' element={<Home articles={articles}/>}/>
+        <Route path='/:id' element={< ArticleDetails />} />
+      </Routes>
     </div>
   );
 }
