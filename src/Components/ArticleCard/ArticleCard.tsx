@@ -1,9 +1,13 @@
 import React from 'react'
+import './ArticleCard.css'
 
-const ArticleCard: React.FC = () => {
+const ArticleCard: React.FC<any> = ({id, byline, title, multimedia}) => {
   return(
-    <div>
-      <h2>This is the article card component.</h2>
+    <div className='card'>
+      <h2>{title}</h2>
+      <h3>{byline}</h3>
+      {multimedia && <img src={multimedia[0].url} alt='article image' className='card-img'/>}
+      {!multimedia && <img src='#' alt='missing article image'/>}
     </div>
   )
 }

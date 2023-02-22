@@ -33,11 +33,11 @@ interface Articles {
 }
 
 const Home: React.FC<Articles[] | any> = (articles) => {
-  console.log('HOME', articles)
+  console.log('HOME PROPS', articles.articles)
   return(
     <div>
       <h1>Hello World</h1>
-      <ArticleContainer />
+      <ArticleContainer articles={articles.articles}/>
     </div>
   )
 }
