@@ -39,7 +39,7 @@ const App: React.FC = () => {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home articles={articles} filterArticles={filterArticles} resetFilter={resetFilter}/>}/>
-        <Route path='/:uri' element={< ArticleDetails />} />
+        <Route path='/:uri' element={< ArticleDetails articles={articles}/>} />
       </Routes>
       <h2>{searchResults}</h2>
     </div>

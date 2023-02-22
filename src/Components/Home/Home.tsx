@@ -34,7 +34,6 @@ interface Articles {
 }
 
 const Home: React.FC<Articles[] | any> = (articles) => {
-  console.log('HOME PROPS', articles.articles)
   return(
     <div>
       <h1>Daily Dose</h1>

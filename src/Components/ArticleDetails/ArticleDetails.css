@@ -1,0 +1,15 @@
+.article-img {
+  height: 25vh;
+  height: 35vw;
+  border-radius: 1rem;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  border-radius: .5rem;
+}

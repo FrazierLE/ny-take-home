@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 
 const Form: React.FC<any> = (props) => {
-  console.log('PROPS IN FORM', props)
   const [input, setInput] = useState<string>('')
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
