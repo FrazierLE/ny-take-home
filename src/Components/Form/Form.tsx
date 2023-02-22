@@ -1,15 +1,17 @@
 import React, {useState} from 'react'
 
-const Form: React.FC = () => {
+const Form: React.FC<any> = (props) => {
+  console.log('PROPS IN FORM', props)
   const [input, setInput] = useState<string>('')
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInput(event.currentTarget.value)
+    props.filterArticles(event.currentTarget.value)
   }
 
-  const handleClick = () => {
-    console.log('click')
-    // filter search/look at rancid tomatillos 
+  const reset = () => {
+    props.resetFilter()
+    setInput('')
   }
 
   return (
@@ -21,8 +23,7 @@ const Form: React.FC = () => {
         name='input'
         onChange={(event) => handleChange(event)}  
         />
-        <button onClick={handleClick}>Search</button>
-        {/* <h3>{input}</h3> */}
+        <button onClick={reset}>Clear Search</button>
     </form>
   )
 }

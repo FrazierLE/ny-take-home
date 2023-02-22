@@ -38,7 +38,7 @@ const Home: React.FC<Articles[] | any> = (articles) => {
   return(
     <div>
       <h1>Daily Dose</h1>
-      <Form />
+      <Form filterArticles={articles.filterArticles} resetFilter={articles.resetFilter}/>
       <ArticleContainer articles={articles.articles}/>
     </div>
   )
