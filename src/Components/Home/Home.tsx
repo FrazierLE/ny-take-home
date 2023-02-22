@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
+import Form from '../Form/Form'
 
 interface Articles {
   abstract: string
@@ -36,7 +37,8 @@ const Home: React.FC<Articles[] | any> = (articles) => {
   console.log('HOME PROPS', articles.articles)
   return(
     <div>
-      <h1>Hello World</h1>
+      <h1>Daily Dose</h1>
+      <Form />
       <ArticleContainer articles={articles.articles}/>
     </div>
   )
