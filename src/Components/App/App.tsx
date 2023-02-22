@@ -4,6 +4,7 @@ import { fetchData } from '../../ApiCalls';
 import { Routes, Route } from 'react-router-dom';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import Home from '../Home/Home';
+import Error from '../Error/Error';
 
 const App: React.FC = () => {
   const [ articles, setArticles ] = useState([])
@@ -39,7 +40,8 @@ const App: React.FC = () => {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home articles={articles} filterArticles={filterArticles} resetFilter={resetFilter}/>}/>
-        <Route path='/:uri' element={< ArticleDetails />} />
+        <Route path='/:uri' element={< ArticleDetails articles={articles}/>} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <h2>{searchResults}</h2>
     </div>
