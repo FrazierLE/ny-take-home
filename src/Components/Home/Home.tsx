@@ -34,9 +34,21 @@ interface Articles {
 }
 
 const Home: React.FC<Articles[] | any> = (articles) => {
+  const categories = ['Arts', 'Automobiles', 'Books', 'Business', 'Fashion', 'Food', 'Health', 'Home', 'Insider', 'Magazine', 'Movies', 'Ny Region', 'Obituaries', 'Opinion', 'Politics', 'Real Estate', 'Science', 'Sports', 'Sunday Review', 'Technology', 'Theater', 'T-magazine', 'Travel', 'Upshot', 'Us', 'World']
+  
+  const chooseCategory = (event: any) => {
+    articles.setCategory(event.currentTarget.value)
+  }
+
   return(
     <div>
       <h1>Daily Dose</h1>
+      <select onChange={(event) => chooseCategory(event)}>
+        <option>Choose a category...</option>
+        {categories.map((category: any) => {
+          return(<option value={category.toLowerCase()}>{category}</option>)
+        })}
+      </select>
       <Form filterArticles={articles.filterArticles} resetFilter={articles.resetFilter}/>
       <ArticleContainer articles={articles.articles}/>
     </div>
