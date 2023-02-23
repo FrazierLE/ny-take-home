@@ -22,7 +22,7 @@ const Form: React.FC<any> = (props) => {
         name='input'
         onChange={(event) => handleChange(event)}  
         />
-        <button onClick={reset}>Clear Search</button>
+        <button onClick={reset}>Reset Search</button>
     </form>
   )
 }
