@@ -5,11 +5,12 @@ import { Routes, Route } from 'react-router-dom';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import Home from '../Home/Home';
 import Error from '../Error/Error';
+import { Articles } from '../../interfaces';
 
 const App: React.FC = () => {
   const [ articles, setArticles ] = useState([])
   const [searchResults, setSearchResults] = useState<string>('')
-  const [category, setCategory] = useState('home')
+  const [category, setCategory] = useState<string>('home')
 
   const initApp = (category: string) => {
     fetchData(category)
@@ -21,8 +22,8 @@ const App: React.FC = () => {
     initApp(category)
   }, [category])
 
-  const filterArticles = (search: any) => {
-    const filteredSearch = articles?.filter((article: any) => article.title.toLowerCase().match(search.toLowerCase()))
+  const filterArticles = (search: string) => {
+    const filteredSearch = articles?.filter((article: Articles, index: number, array: Articles[]) => article.title.toLowerCase().match(search.toLowerCase()))
     setArticles(filteredSearch)
     if(filteredSearch.length > 0) {
       setSearchResults('')
@@ -34,6 +35,7 @@ const App: React.FC = () => {
 
   const resetFilter = () => {
     initApp(category)
+    setSearchResults('')
   }
 
   return (

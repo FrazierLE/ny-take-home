@@ -1,8 +1,9 @@
 import React from 'react'
 import './ArticleCard.css'
 import { Link } from 'react-router-dom'
+import { Card } from '../../interfaces'
 
-const ArticleCard: React.FC<any> = ({id, byline, title, multimedia}) => {
+const ArticleCard: React.FC<Card> = ({id, byline, title, multimedia}) => {
   return(
     <Link to={`/${id.slice(14)}`} key={id}>
       <div className='card'>
