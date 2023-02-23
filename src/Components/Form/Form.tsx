@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import './Form.css'
+import { formFunctions } from '../../interfaces'
 
-const Form: React.FC<any> = (props) => {
+const Form: React.FC<formFunctions> = (props) => {
   const [input, setInput] = useState<string>('')
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

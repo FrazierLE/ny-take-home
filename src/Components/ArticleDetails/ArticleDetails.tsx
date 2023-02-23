@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { useParams, NavLink } from 'react-router-dom'
 import './ArticleDetails.css'
 import Error from '../Error/Error'
+import { ArticlesArray, Articles } from '../../interfaces'
 
-const ArticleDetails: React.FC<any> = (props) => {
+const ArticleDetails: React.FC<ArticlesArray> = (props) => {
   const param = useParams()
-  const details = props.articles.find((item: any) => item.uri.slice(14) === param.uri)
+  const details = props.articles.find((item: Articles, index: number, array: Articles[]) => item.uri.slice(14) === param.uri)
   return(
     <section className='details-container'>
       {details && 
