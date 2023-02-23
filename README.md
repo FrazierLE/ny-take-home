@@ -17,4 +17,4 @@ Extra, extra! Read all about it! Visit this application and get the New York Tim
 * RESTful API
 
 #### Contributor
-[Github](https://github.com/FrazierLE) | [LinkedIn](https://www.linkedin.com/in/lauren-frazier-745053188/) | [Porfolio](https://portfolio-frazierle.vercel.app/)
+Lauren Frazier [Github](https://github.com/FrazierLE) | [LinkedIn](https://www.linkedin.com/in/lauren-frazier-745053188/) | [Porfolio](https://portfolio-frazierle.vercel.app/)
