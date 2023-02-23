@@ -14,7 +14,6 @@ const App: React.FC = () => {
   const initApp = (category: string) => {
     fetchData(category)
       .then(data => {
-        console.log('data results', data.results)
         setArticles(data.results)})
   }
 
