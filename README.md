@@ -13,7 +13,7 @@ Extra, extra! Read all about it! Visit this application and get the New York Tim
 * Cypress
 * React
 * CSS3
-* HTML5
+* XML
 * RESTful API
 
 #### Contributor
