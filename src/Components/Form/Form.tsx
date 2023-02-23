@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Form.css'
 
 const Form: React.FC<any> = (props) => {
   const [input, setInput] = useState<string>('')
@@ -17,12 +18,12 @@ const Form: React.FC<any> = (props) => {
     <form className='form'>
       <input 
         type='text'    
-        placeholder='Search...'
+        placeholder='Search article by title...'
         value={input}
         name='input'
         onChange={(event) => handleChange(event)}  
         />
-        <button onClick={reset}>Clear Search</button>
+        <h2 onClick={reset} className='reset'>Reset Search</h2>
     </form>
   )
 }
