@@ -34,6 +34,7 @@ const App: React.FC = () => {
 
   const resetFilter = () => {
     initApp(category)
+    setSearchResults('')
   }
 
   return (
