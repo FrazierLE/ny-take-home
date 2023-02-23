@@ -11,3 +11,14 @@
   width: 15vw;
   border-radius: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  .card-img {
+    height: 7vh;
+    width: 10vw;
+  }
+  .card {
+    height: max-content;
+    font-size: .75rem;
+  }
+}
