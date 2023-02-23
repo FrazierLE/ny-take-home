@@ -23,7 +23,7 @@ const Form: React.FC<any> = (props) => {
         name='input'
         onChange={(event) => handleChange(event)}  
         />
-        <h3 onClick={reset} className='reset'>Reset Search</h3>
+        <h2 onClick={reset} className='reset'>Reset Search</h2>
     </form>
   )
 }
