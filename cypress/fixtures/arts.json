@@ -1,0 +1,75 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  "section": "Arts",
+  "last_updated": "2023-02-23T13:07:36-05:00",
+  "num_results": 34,
+  "results": [
+  {
+  "section": "arts",
+  "subsection": "music",
+  "title": "Jessye Norman Rejected These Recordings. Should They Be Released?",
+  "abstract": "The new collection “Jessye Norman: The Unreleased Masters” raises artistic and ethical questions.",
+  "url": "https://www.nytimes.com/2023/02/23/arts/music/jessye-norman-unreleased-recordings.html",
+  "uri": "nyt://article/064ab85e-f432-56c9-9b3a-49fcbc77d03f",
+  "byline": "By Zachary Woolfe",
+  "item_type": "Article",
+  "updated_date": "2023-02-23T10:00:07-05:00",
+  "created_date": "2023-02-23T10:00:07-05:00",
+  "published_date": "2023-02-23T10:00:07-05:00",
+  "material_type_facet": "",
+  "kicker": "Critic’s Notebook",
+  "des_facet": [
+  "Classical Music",
+  "Opera",
+  "Phaedra (Opera)",
+  "Tristan und Isolde (Opera)"
+  ],
+  "org_facet": [
+  "Decca Records",
+  "Deutsche Grammophon"
+  ],
+  "per_facet": [
+  "Norman, Jessye",
+  "Levine, James",
+  "Masur, Kurt",
+  "Barenboim, Daniel"
+  ],
+  "geo_facet": [
+  "Leipzig (Germany)"
+  ],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2023/02/26/arts/26jessye-norman1/26jessye-norman1-superJumbo.jpg",
+  "format": "Super Jumbo",
+  "height": 2048,
+  "width": 1366,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "The soprano Jessye Norman, who died in 2019.",
+  "copyright": "Philippe Wojazer/Agence France-Presse, via Getty Images"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/26/arts/26jessye-norman1/26jessye-norman1-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "The soprano Jessye Norman, who died in 2019.",
+  "copyright": "Philippe Wojazer/Agence France-Presse, via Getty Images"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2023/02/26/arts/26jessye-norman1/26jessye-norman1-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "The soprano Jessye Norman, who died in 2019.",
+  "copyright": "Philippe Wojazer/Agence France-Presse, via Getty Images"
+  }
+  ],
+  "short_url": "https://nyti.ms/3xJ8Qsp"
+  }]
+}
