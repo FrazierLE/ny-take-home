@@ -44,7 +44,7 @@ const Home: React.FC<Articles[] | any> = (articles) => {
     <div>
       <h1>Daily Dose</h1>
       <select onChange={(event) => chooseCategory(event)}>
-        <option>Choose a category...</option>
+        <option value={'home'}>Choose a category...</option>
         {categories.map((category: any) => {
           return(<option value={category.toLowerCase()}>{category}</option>)
         })}
